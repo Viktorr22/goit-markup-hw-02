@@ -1,0 +1,81 @@
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Roboto';
+}
+
+/*Шапка*/
+
+.logo {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+
+.logo-studio {
+  color: #000000;
+}
+
+.menu-nav a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.menu-nav a:hover,
+.menu-nav a:focus {
+  color: #2196f3;
+}
+
+.header-contacts a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.header-contacts a:hover,
+.header-contacts a:focus {
+  color: #2196f3;
+}
+
+/*Секция 1*/
+
+.main-section {
+  background: #2f303a;
+}
+.main-section h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.main-section button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
+}
