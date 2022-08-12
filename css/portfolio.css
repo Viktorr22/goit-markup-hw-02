@@ -69,34 +69,7 @@ body {
   color: var(--accent-color);
 }
 
-/*Герой*/
-.hero {
-  background: #2f303a;
-}
-.hero-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--text-color-hero);
-}
-.button {
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--text-color-hero);
-  background: var(--accent-color);
-  cursor: pointer;
-}
-
-/* Наші переваги */
+/* Мэйн */
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -109,52 +82,45 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
-.advantage .advantage-item-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+.project-menu-list {
+  list-style: none;
 }
-.advantage .advantage-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-}
-
-/* Чим ми займаємося */
-.work-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
-/* Наша команда */
-.team-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-.team .team-item-title {
+.project-menu-list .project-button {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.63;
+  text-align: center;
   letter-spacing: 0.03em;
+  color: inherit;
+  background: #f5f4fa;
+  cursor: pointer;
 }
-.team .team-item-text {
+.project-menu-list .project-button:hover {
+  color: var(--text-color-hero);
+  background: var(--accent-color);
+}
+.project-menu-list .project-button:focus {
+  color: var(--text-color-hero);
+  background: var(--accent-color);
+}
+
+.project-list {
+  list-style: none;
+}
+.project-list .project-list-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.project-list .project-list-text {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-
 /* Футер */
 .footer {
   background: var(--bg-color-foother);
