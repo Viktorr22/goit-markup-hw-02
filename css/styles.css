@@ -10,6 +10,7 @@
   --outside-color: #f5f5f5;
   --team-bg-color: #f5f4fa;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --logo-header-color: #000000;
 }
 
 body {
@@ -20,7 +21,7 @@ body {
 
 /*Шапка*/
 .logo {
-  font-family: 'Raleway';
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -29,9 +30,9 @@ body {
   text-decoration: none;
 }
 .studio-header {
-  color: #000000;
+  color: var(--logo-header-color);
 }
-.menu .link {
+.link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -39,24 +40,18 @@ body {
   color: var(--primary-text-color);
   text-decoration: none;
 }
-.menu .link:hover {
+.link:hover,
+.link:focus {
   color: var(--accent-color);
 }
-.menu .link:focus {
-  color: var(--accent-color);
-}
+
 .menu {
   list-style: none;
 }
-.menu .current-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+.link.current {
   color: var(--accent-color);
-  text-decoration: none;
 }
-.header-contacts-list .header-contacts-link {
+.header-contacts-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -67,16 +62,14 @@ body {
 .header-contacts-list {
   list-style: none;
 }
-.header-contacts-list .header-contacts-link:hover {
-  color: var(--accent-color);
-}
-.header-contacts-list .header-contacts-link:focus {
+.header-contacts-link:hover,
+.header-contacts-link:focus {
   color: var(--accent-color);
 }
 
 /*Герой*/
 .hero {
-  background: #2f303a;
+  background-color: var(--bg-color-foother);
 }
 .hero-title {
   font-weight: 900;
@@ -97,7 +90,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--text-color-hero);
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   cursor: pointer;
 }
 
@@ -114,15 +107,17 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
-.advantage .advantage-item-title {
+.advantage-list {
+  list-style: none;
+}
+.advantage-item-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.advantage .advantage-text {
-  font-weight: 400;
+.advantage-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -130,6 +125,9 @@ body {
 }
 
 /* Чим ми займаємося */
+.work-list {
+  list-style: none;
+}
 .work-title {
   font-weight: 700;
   font-size: 36px;
@@ -139,6 +137,16 @@ body {
 }
 
 /* Наша команда */
+.team {
+  background-color: var(--team-bg-color);
+}
+.team-list {
+  list-style: none;
+}
+.team-item {
+  background-color: var(--primary-bg-color);
+}
+
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -146,14 +154,13 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.team .team-item-title {
+.team-item-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.team .team-item-text {
-  font-weight: 400;
+.team-item-text {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -162,23 +169,22 @@ body {
 
 /* Футер */
 .footer {
-  background: var(--bg-color-foother);
+  background-color: var(--bg-color-foother);
 }
 .studio-footer {
   color: var(--text-color-hero);
 }
-.address-list .address-city,
+.address-city,
 .footer-contacts {
   text-decoration: none;
 }
 .address-list {
   list-style: none;
 }
-.address .address-city,
+.address-city,
 .footer-contacts {
   font-family: var(--primary-font);
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -187,15 +193,12 @@ body {
 .footer-contacts {
   color: rgba(255, 255, 255, 0.6);
 }
-.address .address-city:hover {
+.address-city:hover,
+.address-city:focus {
   color: var(--accent-color);
 }
-.address .address-city:focus {
-  color: var(--accent-color);
-}
-.footer-contacts:hover {
-  color: var(--accent-color);
-}
+
+.footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--accent-color);
 }
